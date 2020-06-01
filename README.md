@@ -87,7 +87,7 @@ Example: policy A với @P_DATE_ISSUE = 201901, @P_DATE_EXPIRY = 201912. functio
 > *
 > FROM E_fn_SPLIT_INTERVAL1('20190101','20191231',NULL)
 ```
-![U P R 01](UPR-01.png)
+![U P R 01](https://github.com/GIC-HO/UPR-CONVENTION/blob/master/Images/UPR-01.png)
 
 Thay giá trị NULL bằng ngày UPR date là 20190501. Hàm sẽ trả về giá trị UPR tại thời điểm tháng 05
 
@@ -97,7 +97,7 @@ Thay giá trị NULL bằng ngày UPR date là 20190501. Hàm sẽ trả về gi
 > FROM E_fn_SPLIT_INTERVAL1('20190101','20191231','20190501')
 ```
 
-![U P R 02](D:/hieu.vuduc/Desktop/UPR-02.png)
+![U P R 02](https://github.com/GIC-HO/UPR-CONVENTION/blob/master/Images/UPR-02.png)
 
 
 E_fn_tbl_UPR_CORE(@data_period, @upr_period_from, @upr_period_to): Trả về full data UPR từ @upr_period_from đến @upr_period_to
@@ -170,4 +170,4 @@ SELECT
 				
 FROM dbo.E_UPR_dummydata __	OUTER APPLY	E_fn_SPLIT_INTERVAL1( __.EFFECTIVE_DATE, __.EXPIRY_DATE, __.UPR_PERIOD)	AS SPL 
 ```
-![U P R 03](D:/hieu.vuduc/Desktop/UPR-03.png)
+![U P R 03](https://github.com/GIC-HO/UPR-CONVENTION/blob/master/Images/UPR-03.png)
