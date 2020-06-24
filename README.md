@@ -6,7 +6,7 @@ Contains all logic about UPR Calculation and Maintainance
 
 [TT 50/2017/TT-BTC](http://www.docluat.vn/van-ban-phap-luat-ve-kinh-doanh-bao-hiem/tt-50-2017-tt-btc-huong-dan-thi-hanh-nghi-dhinh-so-73-2016-ndh-cp-ngay-01-7-2016-cua-chinh-phu-quy-dhinh-chi-tiet-thi-hanh-luat-kinh-doanh-bao-hiem-va-luat-sua-dhoi-bo-sung-mot-so-dhieu-cua-luat-kinh-doanh-bao-hiem-1#TOC-M-c-2.-D-PH-NG-NGHI-P-V-)
 
-#### Method:
+### Method:
 
 	Tất cả các sản phẩm đều được tính DPP dựa trên phương pháp 1/365.
 	
@@ -15,12 +15,12 @@ Contains all logic about UPR Calculation and Maintainance
 |                             	|   	| Tổng số ngày bảo hiểm theo hợp đồng bảo hiểm,   tái bảo hiểm                  	|
 
 
-#### Trigger condition:
+### Trigger condition:
 
 	UPR date > booking date
 	UPR separately compute original policy and endo 
 
-#### Cấp độ tính toán dự phòng theo từng từng loại nghiệp vụ:
+### Cấp độ tính toán dự phòng theo từng từng loại nghiệp vụ:
 
 LOB	| Policy| Risk | Coverage
 :------------ | :-------------| :-------------| :-------------
@@ -76,7 +76,7 @@ TÍnh dự phòng phí theo cấp độ riêng lẻ hợp đồng ngoại trừ 
 | 6. XOL               	| 1/1-31/12       	| Theo như pp trích lập 1/365 Mục 1 	|
 
 
-#### Quy trình tính toán DPP:
+### Quy trình tính toán DPP:
 
 PP tính: Chia tách phí theo tháng
 
@@ -97,7 +97,7 @@ PP tính: Chia tách phí theo tháng
 	3. Thời hạn hiệu lực có hợp lý theo từng đặc thù của các nghiệp vụ?
 	4. Thời hạn HĐ gốc không trùng với thời hạn của tái, hoa hồng...? 
 	5. Hợp đồng có phí tái/hoa hồng nhưng không có phí gốc?.
- #### Execute sql code
+ ### Execute sql code
 
 
 Step 1:
@@ -139,7 +139,7 @@ Step 4:
 
 Upload data vào excel
 
-#### Demo
+### Demo
 
 Mô tả cách tính toán DPD hiện tại trên một số hợp đồng tiêu biểu theo cách chia tách thời hạn theo tháng
 
