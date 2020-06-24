@@ -135,9 +135,13 @@ Step 3:
 
 Merge data giữa 2 step
 
+[UPR_COMBINE](https://github.com/vdhieu101/UPR-CONVENTION/blob/patch-1/UPR_COMBINE.sql)
+
 Step 4:
 
 Upload data vào excel
+
+[UPR_EXCEL](https://github.com/vdhieu101/UPR-CONVENTION/blob/patch-1/(20200428%20-%201.0A)%20UPR%20COMBINE%20202003.xlsx)
 
 ### Demo
 
